@@ -1,0 +1,73 @@
+.registro-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.registro-banner {
+  flex: 1;
+  background: linear-gradient(to bottom right, #ff8000, #ffc400);
+  color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.registro-banner img {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.registro-formulario {
+  flex: 1;
+  padding: 4rem;
+  background: #fffdf9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.registro-formulario h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.registro-formulario input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.btn-registrarse {
+  background: linear-gradient(to right, #ff8000, #ffb300);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.registro-divider {
+  margin: 1rem 0;
+  text-align: center;
+  color: #aaa;
+}
+
+.ir-login {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.mensaje-registro {
+  margin-top: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}

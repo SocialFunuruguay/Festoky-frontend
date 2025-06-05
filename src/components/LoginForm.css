@@ -1,0 +1,113 @@
+.contenedor-login {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Lado izquierdo */
+.lado-izquierdo {
+  flex: 1;
+  background: linear-gradient(to bottom right, #ff9900, #ffcc00);
+  color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lado-izquierdo h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.lado-izquierdo p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.lado-izquierdo img {
+  margin-top: 2rem;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Lado derecho */
+.lado-derecho {
+  flex: 1;
+  background-color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lado-derecho h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* Formulario */
+.lado-derecho form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.lado-derecho form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lado-derecho form button:hover {
+  background-color: #ff8500;
+}
+
+.lado-derecho p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.lado-derecho a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.lado-derecho a:hover {
+  text-decoration: underline;
+}
+
+.google-login {
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Mensaje de error */
+.lado-derecho .mensaje-error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+.lado-derecho {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem; /* importante */
+}

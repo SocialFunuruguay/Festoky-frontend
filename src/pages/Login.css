@@ -1,0 +1,95 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-left {
+  flex: 1;
+  background-image: url('/fondo-login.jpg'); /* ⚠️ Cambiá por tu imagen */
+  background-size: cover;
+  color: white;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.login-right {
+  flex: 1;
+  background: #fff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-banner {
+  flex: 1;
+  background: linear-gradient(to bottom right, #ff8000, #ffc400);
+  color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.login-banner img {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.login-formulario {
+  flex: 1;
+  padding: 4rem;
+  background: #fffdf9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 👈 esto centra vertical */
+  gap: 1rem;
+  min-height: 100vh; /* 👈 asegura altura completa */
+}
+
+
+.login-formulario h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-formulario input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.btn-login {
+  background: linear-gradient(to right, #ff8000, #ffb300);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 1rem 0;
+  text-align: center;
+  color: #aaa;
+}
+
+.crear-cuenta {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}

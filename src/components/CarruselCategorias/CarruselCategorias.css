@@ -1,0 +1,102 @@
+/* ---- CarruselCategorias.css ---- */
+.carrusel-categorias {
+  width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(to top, #fffaf2   90%, transparent 100%);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 40px 0 20px 0; /* antes era 40px 20px */
+  overflow-x: hidden;
+  position: relative;
+  margin-top: -80px; /* 👈 sube el carrusel sin empujar nada más */
+  box-shadow: none;            /* por si quedara algo molesto */
+
+}
+
+.titulo-categorias {
+  font-size: 1.6rem;
+  color: #ff8000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carrusel {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+  align-items: center;
+  position: relative;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.categoria-card {
+  flex: 0 0 auto;
+  width: 150px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.categoria-icono {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.categoria-card span {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+  display: block;
+}
+
+.carrusel-btn {
+  background-color: rgba(255, 165, 0, 0.85);
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(255, 140, 0, 0.95);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carrusel-btn.prev {
+   outline: none;
+  left: 12px;
+}
+
+.carrusel-btn.next {
+   outline: none;
+  right: 12px;
+}
