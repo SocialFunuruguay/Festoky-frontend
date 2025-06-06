@@ -26,19 +26,16 @@ border-radius: 0 0 12px 12px;
 }
 
 .header__search {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 10px;
+  flex: 1;
+  margin: 0 20px;
 }
 
 .header__search input {
-  width: 100%;
-  padding: 8px 12px;
-  font-size: 1rem;
-  border-radius: 6px;
+  width: 75%;
+  padding: 10px 15px;
   border: none;
   outline: none;
-  box-sizing: border-box;
+  font-size: 1rem;
 }
 
 

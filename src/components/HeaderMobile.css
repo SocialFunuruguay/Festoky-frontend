@@ -32,6 +32,12 @@
 }
 
 
+.header-mobile__search {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
 .header-mobile__search input {
   width: 100%;
   padding: 8px 12px;
@@ -39,7 +45,9 @@
   border-radius: 6px;
   border: none;
   outline: none;
+  box-sizing: border-box;
 }
+
 
 .header-mobile__ubicacion {
   font-size: 0.85rem;
