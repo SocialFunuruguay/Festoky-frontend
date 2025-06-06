@@ -1,0 +1,76 @@
+
+/* HeaderMobile.css */
+
+.header-mobile {
+  background: linear-gradient(to right, #ff8000, #ffc400);
+  color: #660000;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-mobile__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-mobile {
+  height: 40px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #660000;
+  cursor: pointer;
+}
+
+
+.header-mobile__search input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.header-mobile__ubicacion {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.header-mobile__menu {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-mobile__menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-mobile__menu li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-mobile__menu li:last-child {
+  border-bottom: none;
+}
+
+.header-mobile__menu a {
+  color: #660000;
+  text-decoration: none;
+  font-weight: 500;
+}
+

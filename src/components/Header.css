@@ -14,7 +14,6 @@ background: linear-gradient(to right, #ff8000, #ffc400, #ff8000);
   z-index: 1000;
   font-family: 'Poppins', sans-serif;
 border-radius: 0 0 12px 12px;
-
 }
 
 .header__logo img {
@@ -109,7 +108,6 @@ border-radius: 0 0 12px 12px;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   z-index: 1000;
-
   flex-wrap: wrap;              /* ✅ Permite que las columnas salten a la siguiente línea */
   justify-content: flex-start;
    max-height: 80vh;
@@ -171,14 +169,17 @@ border-radius: 0 0 12px 12px;
 }
 
 .header__usuario {
+  position: relative;
+  z-index: 1100;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  position: relative;
 }
 
+.header__usuario:hover .usuario-menu {
+  display: block;
+}
 
 
 
@@ -186,24 +187,19 @@ border-radius: 0 0 12px 12px;
   position: relative;
 }
 
-.usuario-wrapper:hover .usuario-menu {
-  display: block;
-}
-
 .usuario-menu {
   position: absolute;
   top: 100%;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(6px);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 12px 16px;
-  margin-top: -2px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px;
   display: none;
-  z-index: 2000;
-  min-width: 220px;
+  min-width: 200px;
+  z-index: 1101;
 }
+
 
 .usuario-menu ul {
   list-style: none;
@@ -212,14 +208,8 @@ border-radius: 0 0 12px 12px;
 }
 
 .usuario-menu li {
-  padding: 10px 12px;
-  border-radius: 8px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  font-weight: 500;
-  color: #333;
-  display: flex;
-  align-items: center;
+  padding: 6px 10px;
+  font-size: 0.9rem;
 }
 
 .usuario-menu li:hover a {
@@ -395,3 +385,46 @@ border-radius: 0 0 12px 12px;
 }
 
 
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .header__left,
+  .header__right,
+  .header__search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .header__menus {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    position: static;
+  }
+
+  .header__search input {
+    width: 100%;
+  }
+
+  .header__right {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-right: 0;
+  }
+
+  .usuario-menu {
+    right: 10px;
+  }
+
+  .submenu {
+    max-width: 100vw;
+    padding: 10px;
+    gap: 20px;
+  }
+}

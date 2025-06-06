@@ -14,9 +14,9 @@ const esProveedor = false;
 function Header() {
   const { usuario, logout } = useContext(AuthContext);
   const [ubicacion, setUbicacion] = useState(null);
-console.log("USUARIO ACTUAL:", usuario);
+  console.log("USUARIO ACTUAL:", usuario);
 
-useEffect(() => {
+  useEffect(() => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async (position) => {
       const lat = position.coords.latitude;
@@ -39,7 +39,7 @@ useEffect(() => {
     console.warn("🌐 Geolocalización no disponible en este navegador");
     setUbicacion({ ciudad: "Ubicación no disponible", pais: "" });
   }
-}, []);
+  }, []);
 
 
   return (
@@ -300,78 +300,60 @@ useEffect(() => {
       </div>
 
       <div className="header__right">
-  <div className="proveedor-link">
-    <button className="btn-proveedor">Sé Proveedor</button>
-  </div>
+        <div className="proveedor-link">
+          <button className="btn-proveedor">Sé Proveedor</button>
+        </div>
 
   {/* Bloque de usuario con menú */}
   <div className="usuario-wrapper">
     <div className="header__usuario">
-      <img src={iconoUsuario} alt="Usuario" className="usuario-icono" />
-      <div className="usuario-texto">
-        {usuario ? (
-  <>
-    <span className="linea-superior">¡Hola!</span>
-    <span className="linea-inferior">{usuario.email}</span>
-  </>
-) : (
-  <>
-    <span className="linea-superior">¡Vení a Divertirte!</span>
-    <span className="linea-inferior">Identifícate / Regístrate</span>
-  </>
-)}
-      </div>
-    </div>
-
-      <div className="usuario-menu">
-  <ul>
-    {!usuario && (
+  <img src={iconoUsuario} alt="Usuario" className="usuario-icono" />
+  <div className="usuario-texto">
+    {usuario ? (
       <>
-        <li className="login-btn"><Link to="/login">Identifícate</Link></li>
-          <li className="registro-centro">
-          <Link to="/registro">Regístrate</Link>
-        </li>
-        <li className="linea-separadora"></li>
+        <span className="linea-superior">¡Hola!</span>
+        <span className="linea-inferior">{usuario.email}</span>
+      </>
+    ) : (
+      <>
+        <span className="linea-superior">¡Vení a Divertirte!</span>
+        <span className="linea-inferior">Identifícate / Regístrate</span>
       </>
     )}
-
-    {/* Opciones comunes siempre visibles */}
-    <li className="sutil-opcion">
-      <Link to={usuario ? "/mi-fiesta" : "/login"}>Mi Fiesta</Link>
-    </li>
-    <li className="sutil-opcion">
-      <Link to={usuario ? "/mensajes" : "/login"}>Mensajes</Link>
-    </li>
-    <li className="sutil-opcion">
-      <Link to={usuario ? "/mis-presupuestos" : "/login"}>Mis Presupuestos</Link>
-    </li>
-    <li className="sutil-opcion">
-      <Link to={usuario ? "/favoritos" : "/login"}>Favoritos</Link>
-    </li>
-    <li className="sutil-opcion">
-      <Link to={usuario ? "/crear-invitacion" : "/login"}>Crear tu invitación</Link>
-    </li>
-
-    {/* Solo se muestra si está logueado */}
-    {usuario && (
-      <li className="logout-opcion" onClick={logout}>
-        <a href="#">Cerrar sesión</a>
-      </li>
-    )}
-  </ul>
-</div>
-
-
-
   </div>
 
-  {/* Botón de idioma fuera del wrapper */}
-  <div className="header__idioma">
-    <button className="btn-idioma" aria-label="Cambiar idioma">
-      <Globe size={20} strokeWidth={1.5} />
-    </button>
+  <div className="usuario-menu">
+      <ul>
+        {!usuario && (
+          <>
+            <li className="login-btn"><Link to="/login">Identifícate</Link></li>
+            <li className="registro-centro"><Link to="/registro">Regístrate</Link></li>
+            <li className="linea-separadora"></li>
+          </>
+        )}
+        <li><Link to={usuario ? "/mi-fiesta" : "/login"}>Mi Fiesta</Link></li>
+        <li><Link to={usuario ? "/mensajes" : "/login"}>Mensajes</Link></li>
+        <li><Link to={usuario ? "/mis-presupuestos" : "/login"}>Mis Presupuestos</Link></li>
+        <li><Link to={usuario ? "/favoritos" : "/login"}>Favoritos</Link></li>
+        <li><Link to={usuario ? "/crear-invitacion" : "/login"}>Crear tu invitación</Link></li>
+        {usuario && (
+          <li className="login-btn" onClick={logout}>
+    <a href="#">Cerrar sesión</a>
+  </li>
+        )}
+      </ul>
+    </div>
   </div>
-</div>
+
+    </div>
+
+    {/* Botón de idioma fuera del wrapper */}
+    <div className="header__idioma">
+      <button className="btn-idioma" aria-label="Cambiar idioma">
+        <Globe size={20} strokeWidth={1.5} />
+      </button>
+    </div>
+  </div>
 
 </header>
   );

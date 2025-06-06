@@ -18,3 +18,41 @@ p {
   font-size: 1.2rem;
   color: #444;
 }
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem; /* Reducir padding en pantallas pequeñas */
+  }
+
+  .logo {
+    height: 100px; /* Ajustar el tamaño del logo en pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  p {
+    font-size: 1rem; /* Reducir el tamaño del párrafo en pantallas pequeñas */
+  }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 1024px) {
+  .app {
+    padding: 3rem; /* Aumentar padding en pantallas grandes */
+  }
+
+  .logo {
+    height: 150px; /* Aumentar el tamaño del logo en pantallas grandes */
+  }
+
+  h1 {
+    font-size: 3rem; /* Aumentar el tamaño del título en pantallas grandes */
+  }
+
+  p {
+    font-size: 1.5rem; /* Aumentar el tamaño del párrafo en pantallas grandes */
+  }
+}
