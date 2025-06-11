@@ -57,7 +57,6 @@ function LoginForm() {
       <div className="lado-izquierdo" style={{ flex: 1, background: 'linear-gradient(to bottom right, #ff9900, #ffcc00)', color: '#fff', padding: '4rem' }}>
         <h1 style={{ fontSize: '2.5rem' }}>🎉 Organizá tu fiesta sin estrés</h1>
         <p style={{ marginTop: '1rem' }}>Encontrá proveedores, compará presupuestos, gestioná invitados y mucho más. Todo en un solo lugar, con <strong>Festario</strong>.</p>
-        <img src="/iconos/icono-organizacion.png" alt="Organización de eventos" style={{ marginTop: '2rem', width: '80%' }} />
       </div>
 
       <div className="lado-derecho" style={{ flex: 1, padding: '4rem', backgroundColor: '#fff' }}>
