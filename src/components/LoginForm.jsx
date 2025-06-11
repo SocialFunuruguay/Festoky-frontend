@@ -20,14 +20,13 @@ function LoginForm() {
     setMensaje('Iniciando sesión...');
 
     try {
-      const N = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password: contraseña }) // contraseña enviada correctamente
-      });
+ const res = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ email, password: contraseña })
+});
 
-      const data = await res.json();
-
+const data = await res.json();
       if (res.ok) {
         login(email, data.token, data.nombre, data.es_proveedor, data.id);
         setMensaje('¡Bienvenido!');
