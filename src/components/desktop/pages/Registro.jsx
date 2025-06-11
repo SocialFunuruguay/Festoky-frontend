@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Registro.css';
+import '@/components/desktop/pages/Registro.css';
 import { GoogleLogin } from '@react-oauth/google';
 
 function Registro() {

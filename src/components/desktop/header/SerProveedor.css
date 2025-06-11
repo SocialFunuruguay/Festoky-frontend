@@ -1,0 +1,90 @@
+.contenedor-proveedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.box-beneficios {
+  flex: 1 1 300px;
+  background-color: #fff8e1;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(255, 128, 0, 0.2);
+}
+
+.box-beneficios h2 {
+  font-size: 1.5rem;
+  color: #660000;
+  margin-bottom: 20px;
+}
+
+.box-beneficios ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.formulario-proveedor {
+  flex: 1 1 400px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-proveedor h2 {
+  font-size: 1.4rem;
+  color: #660000;
+  margin-bottom: 20px;
+}
+
+.formulario-proveedor label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formulario-proveedor input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.formulario-proveedor button {
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(90deg, #ffb300, #ff8000);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-proveedor button:hover {
+  background: linear-gradient(90deg, #ffa000, #ff7000);
+}
+
+.mensaje-exito {
+  margin-top: 20px;
+  background-color: #dff0d8;
+  border: 1px solid #c8e5bc;
+  color: #3c763d;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}

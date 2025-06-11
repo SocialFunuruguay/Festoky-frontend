@@ -1,17 +1,17 @@
 import React, { useRef } from 'react';
-import './CarruselCategorias.css';
-import iconoSalones from '../../assets/icono-salones.png';
-import iconoSonido from '../../assets/icono-sonido.png';
-import iconoCatering from '../../assets/icono-catering.png';
-import iconoDecoracion from '../../assets/icono-decoracion.png';
-import iconoShows from '../../assets/icono-shows.png';
-import iconoEstetica from '../../assets/icono-estetica.png';
-import iconoFotografia from '../../assets/icono-fotografia.png';
-import iconoInvitaciones from '../../assets/icono-invitaciones.png';
-import iconoAlojamiento from '../../assets/icono-alojamiento.png';
-import iconoOrganizacion from '../../assets/icono-organizacion.png';
-import iconoServiciosEspeciales from '../../assets/icono-serviciosespeciales.png';
-import iconoServiciosParticulares from '../../assets/icono-serviciosparticulares.png';
+import '@/components/desktop/body/CarruselCategorias/CarruselCategorias.css';
+import iconoSalones from '/iconos/icono-salones.png';
+import iconoSonido from '/iconos/icono-sonido.png';
+import iconoCatering from '/iconos/icono-catering.png';
+import iconoDecoracion from '/iconos/icono-decoracion.png';
+import iconoShows from '/iconos/icono-shows.png';
+import iconoEstetica from '/iconos/icono-estetica.png';
+import iconoFotografia from '/iconos/icono-fotografia.png';
+import iconoInvitaciones from '/iconos/icono-invitaciones.png';
+import iconoAlojamiento from '/iconos/icono-alojamiento.png';
+import iconoOrganizacion from '/iconos/icono-organizacion.png';
+import iconoServiciosEspeciales from '/iconos/icono-serviciosespeciales.png';
+import iconoServiciosParticulares from '/iconos/icono-serviciosparticulares.png';
 
 
 const categorias = [

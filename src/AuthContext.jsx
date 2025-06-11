@@ -6,21 +6,28 @@ const AuthProvider = ({ children }) => {
   const [usuario, setUsuario] = useState(null);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    const email = localStorage.getItem('email');
+const token = localStorage.getItem('token');
+const email = localStorage.getItem('email');
+const nombre = localStorage.getItem('nombre');
+const es_proveedor = localStorage.getItem('es_proveedor') === 'true';
+const id = parseInt(localStorage.getItem('id'), 10);
 
-    if (token && email) {
-      setUsuario({ email });
-    } else {
-      setUsuario(null);
-    }
+
+if (token && email && id) {
+  setUsuario({ email, nombre, es_proveedor, id });
+}
+
   }, []);
 
-  const login = (email, token) => {
-    localStorage.setItem('token', token);
-    localStorage.setItem('email', email);
-    setUsuario({ email });
-  };
+const login = (email, token, nombre, es_proveedor, id) => {
+  localStorage.setItem('token', token);
+  localStorage.setItem('email', email);
+  localStorage.setItem('nombre', nombre);
+  localStorage.setItem('es_proveedor', es_proveedor);
+  localStorage.setItem('id', id);
+  setUsuario({ email, nombre, es_proveedor, id });
+};
+
 
   const logout = () => {
     localStorage.removeItem('token');

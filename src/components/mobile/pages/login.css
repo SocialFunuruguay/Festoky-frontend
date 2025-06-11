@@ -1,0 +1,61 @@
+/* src/pages/mobile/Login.css */
+
+.login-mobile-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 90%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7ed;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.login-mobile-container h2 {
+  font-size: 22px;
+  color: #ff8000;
+  margin-bottom: 10px;
+}
+
+.login-mobile-container p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-mobile-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.login-mobile-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-mobile-container button:hover {
+  background-color: #e67300;
+}
+
+.registro-link {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.registro-link a {
+  color: #ff8000;
+  text-decoration: none;
+  font-weight: 500;
+}

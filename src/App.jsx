@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import HeaderMobile from './components/HeaderMobile';
-import Home from './pages/Home';
-import LoginForm from './components/LoginForm';
-import Registro from './pages/Registro';
-import Perfil from './pages/Perfil';
-import RutaPrivada from './RutaPrivada';
+import Header from '@/components/desktop/header/Header';
+import HeaderMobile from '@/components/mobile/header/HeaderMobile';
+import Home from '@/components/desktop/pages/Home';
+import LoginForm from '@/components/LoginForm';
+import Registro from '@/components/desktop/pages/Registro';
+import Perfil from '@/components/desktop/pages/Perfil';
+import RutaPrivada from '@/RutaPrivada';
+import SerProveedor from '@/components/desktop/header/SerProveedor';
+
+
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
@@ -28,6 +31,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/registro" element={<Registro />} />
+        <Route path="/ser-proveedor" element={<SerProveedor />} />
 
         {/* Rutas protegidas */}
         <Route

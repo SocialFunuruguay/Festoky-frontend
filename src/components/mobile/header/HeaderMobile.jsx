@@ -1,9 +1,9 @@
 
-import './HeaderMobile.css';
+import '@/components/mobile/header/HeaderMobile.css';
 import { useState } from 'react';
 import { Globe } from 'lucide-react';
-import logo from '../assets/logo-festario.png';
-import iconoUbicacion from '../assets/icono-ubicacion.png';
+import logo from '/iconos/logo-festario.png';
+import iconoUbicacion from '/iconos/icono-ubicacion.png';
 
 
 function HeaderMobile() {

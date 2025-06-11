@@ -1,9 +1,9 @@
-// src/components/BannerSlider.jsx
+
 import React, { useState, useEffect } from 'react';
-import './BannerSlider.css';
-import banner1 from '../../assets/banners/banner1.jpg';
-import banner2 from '../../assets/banners/banner2.jpg';
-import banner3 from '../../assets/banners/banner3.jpg';
+import '@/components/desktop/body/BannerSlider/BannerSlider.css';
+import banner1 from '/banners/banner1.jpg';
+import banner2 from '/banners/banner2.jpg';
+import banner3 from '/banners/banner3.jpg';
 
 
 function BannerSlider({ images = [], interval = 5000 }) {

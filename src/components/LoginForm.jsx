@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
-import { AuthContext } from '../AuthContext';
+import { AuthContext } from '@/AuthContext';
 import { GoogleLogin } from '@react-oauth/google';
 import './LoginForm.css';
 
@@ -23,24 +23,20 @@ function LoginForm() {
       const res = await fetch('http://localhost:3000/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, contraseña })
+        body: JSON.stringify({ email, password: contraseña }) // contraseña enviada correctamente
       });
 
       const data = await res.json();
 
       if (res.ok) {
-        login(email, data.token);
+        login(email, data.token, data.nombre, data.es_proveedor, data.id);
         setMensaje('¡Bienvenido!');
-        navigate('/');
-      } else if (res.status === 403) {
-        setMensaje('⚠️ Debés verificar tu cuenta. Revisá tu correo 📩');
+        navigate(data.es_proveedor ? '/perfil-proveedor' : '/mi-fiesta');
       } else {
-        setMensaje(data.error || '❌ Credenciales inválidas');
+        setMensaje(data.error || 'Ocurrió un error al iniciar sesión');
       }
-
     } catch (err) {
       setMensaje('Error de conexión con el servidor');
-      console.error('❌ Error en login:', err);
     }
   };
 

@@ -363,7 +363,7 @@ border-radius: 0 0 12px 12px;
 
 .btn-proveedor:hover,
 .btn-idioma:hover {
-  color: #000; /* o usa un tono más oscuro si tu fondo es claro */
+  color: #ff8000; /* o usa un tono más oscuro si tu fondo es claro */
   transform: scale(1.05); /* leve agrandado al pasar el mouse */
   border: none;
   outline: none;

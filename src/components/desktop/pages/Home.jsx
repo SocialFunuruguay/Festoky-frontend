@@ -1,11 +1,11 @@
 import React from 'react';
-import './Home.css';
-import imagenHero from '../assets/hero-festario.png';
-import BannerSlider from "../components/BannerSlider/BannerSlider.jsx";
-import banner1 from '../assets/banners/banner1.jpg';
-import banner2 from '../assets/banners/banner2.jpg';
-import banner3 from '../assets/banners/banner3.jpg';
-import CarruselCategorias from '../components/CarruselCategorias/CarruselCategorias.jsx';
+import '@/components/desktop/pages/Home.css';
+import imagenHero from '/iconos/hero-festario.png';
+import BannerSlider from "@components/desktop/body/BannerSlider/BannerSlider.jsx";
+import banner1 from '/banners/banner1.jpg';
+import banner2 from '/banners/banner2.jpg';
+import banner3 from '/banners/banner3.jpg';
+import CarruselCategorias from '@/components/desktop/body/CarruselCategorias/CarruselCategorias.jsx';
 
 
 
