@@ -1,24 +1,40 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./MiPanel.css"; // podés crear este archivo para los estilos personalizados
+import "./MiPanel.css";
 
 const MiPanel = () => {
   const navigate = useNavigate();
 
-  const handleNavegar = (ruta) => {
-    navigate(ruta);
-  };
-
   return (
-    <div className="panel-proveedor">
-      <h1>Bienvenido al Panel del Proveedor</h1>
-      <p>Desde aquí podés gestionar tus servicios</p>
+    <div className="mi-panel-container">
+      <h1 className="mi-panel-titulo">Mi Panel de Proveedor</h1>
 
-      <div className="panel-botones">
-        <button onClick={() => handleNavegar("/proveedor/agregar-servicio")}>Agregar Servicio</button>
-        <button onClick={() => handleNavegar("/proveedor/mis-servicios")}>Mis Servicios</button>
-        <button onClick={() => handleNavegar("/proveedor/estadisticas")}>Estadísticas</button>
+      <div className="mi-panel-botones">
+        <button
+          className="mi-panel-boton"
+          onClick={() => navigate("/publicar-servicio")}
+        >
+          Publicar nuevo servicio
+        </button>
+
+        <button className="mi-panel-boton" disabled>
+          Mis servicios publicados
+        </button>
+
+        <button className="mi-panel-boton" disabled>
+          Editar perfil de proveedor
+        </button>
+
+        <button className="mi-panel-boton" disabled>
+          Agenda y recordatorios
+        </button>
+
+        <button className="mi-panel-boton" disabled>
+          Contratos y presupuestos
+        </button>
       </div>
+
+      <p className="mi-panel-info">* Algunas secciones estarán disponibles luego de la entrevista</p>
     </div>
   );
 };

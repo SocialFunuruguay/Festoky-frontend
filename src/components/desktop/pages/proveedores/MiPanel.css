@@ -1,0 +1,53 @@
+/* MiPanel.css */
+
+.panel-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff3e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.panel-container h1 {
+  font-size: 2.5rem;
+  color: #e65100;
+  margin-bottom: 30px;
+}
+
+.panel-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.panel-buttons button {
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fb8c00;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.panel-buttons button:hover {
+  background-color: #ef6c00;
+}
+
+.panel-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.aviso-entrevista {
+  margin-top: 20px;
+  color: #777;
+  font-style: italic;
+  font-size: 0.95rem;
+}
