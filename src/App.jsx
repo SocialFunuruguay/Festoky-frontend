@@ -8,6 +8,8 @@ import Registro from '@/components/desktop/pages/Registro';
 import Perfil from '@/components/desktop/pages/Perfil';
 import RutaPrivada from '@/RutaPrivada';
 import SerProveedor from '@/components/desktop/header/SerProveedor';
+import MiPanel from '@/components/desktop/pages/MiPanel';
+
 
 
 
@@ -42,6 +44,15 @@ function App() {
             </RutaPrivada>
           }
         />
+        <Route
+          path="/mi-panel"
+          element={
+            <RutaPrivada>
+              <MiPanel />
+            </RutaPrivada>
+          }
+        />
+
       </Routes>
     </>
   );
