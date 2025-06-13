@@ -8,7 +8,7 @@ import Registro from '@/components/desktop/pages/Registro';
 import Perfil from '@/components/desktop/pages/Perfil';
 import RutaPrivada from '@/RutaPrivada';
 import SerProveedor from '@/components/desktop/header/SerProveedor';
-import MiPanel from '@/components/desktop/pages/MiPanel';
+import MiPanel from '@/components/desktop/pages/proveedores/MiPanel';
 
 
 
